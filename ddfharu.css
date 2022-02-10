@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+#box{
+    background-color: white;
+    text-align: initial;
+
+}
+#box1{
+    background:white ;
+    color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#box2{
+   background-color: dimgrey;
+    text-align: left;
+}
+
+#box4{
+    background:dimgrey;
+}
+.afu{
+    background-color:lightcoral;
+}
+#box5{background-color: dimgrey;
+    color: white;
+}
+.sa{
+    background-color: lightcoral;
+}
+#box6{
+    background-color:white;
+    color:black
+}
+
+.hannsei{
+    text-align: left;
+}
+#box7{
+    background-color: white;
+    color: black;
+}
+
+
+
+.title span {
+  display: block;
+  opacity: 0;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1s, opacity linear 0.7s;
+}
+
+.title span:first-child {
+  transform: translate(0, 40px);
+  font-size: 20px;
+  transition-delay: 0.25s;
+}
+
+.title span:last-child {
+  margin-top: 18px;
+  transform: translate(0, 30px);
+  font-size: 48px;
+  transition-delay: 0.3s;
+}
+
+.bg.-visible .title span {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/****** Base style. ******/
+body {
+  margin: 0;
+}
+#box7{
+    
+}
+#box8{
+    background-color: white;
+    text-align: start;
+    color: black;
+    font-size: 16px;
+}
+.maindo{
+    width: 600px;
+}
+.dtumind{
+    width: 600px;
+
+}
+
+.pawapoji{
+ width:500px
+}
+#box9{
+    background-color:gray;
+    color:white;
+}
+
+#box10{
+    background-color:slategrey;
+    color:white;
+}
+
+#box11{
+    background-color:slategrey;
+    color: white;
+}
+.box11 span
+{
+  background-color: lightseagreen;
+}
+
+
+#box12{
+    background-color:lightgoldenrodyellow;
+    color: black;
+}
+
+#box13{
+    background-color: white;
+    color: black;
+}
+span{
+  background-color: lightyellow;
+}
+
+#box14{
+  background-color: rosybrown;
+  color: #fff;
+}
+
+#box15{
+  background-color: white;
+  color:black;
+}
+
+#box16{
+  background-color: white;
+  color:black;
+}
+
+#box17{
+  background-color:lightgoldenrodyellow;
+  color: black;
+  text-align: left;
+}
+
+#box18{
+  background-color:gray;
+  color:white;
+}
+
+#box19{
+  background-color:azure;
+  color:black
+}
+
+#box20{
+  background-color: white;
+  color: black;
+}
+#box21{
+  background-color: white;
+  color: black;
+  
+}
+.tehonn{
+  width: 500px;
+}
+#box22{
+  background-color: white;
+  color: black;
+}
+
+#box23{
+  background-color:gray;
+    color:white;
+}
+
+#box24{
+  background-color:lightgoldenrodyellow;
+  color: black;
+}
+.on{
+  background-color: lightsalmon;
+}
+
+
+.gmae{
+  text-align: right;
+}
+
+/*========= ページネーションCSS ===============*/
+
+.pagination {
+  position:fixed;
+  right:20px;
+  top: 50%;
+    transform: translateY(-50%);
+  font-size:1em;
+  z-index: 10;
+  list-style: none;
+}
+
+.pagination a {
+  display:block;
+  height:20px;
+  margin-bottom:5px;
+  color:#fff;
+  position:relative;
+  padding:4px;
+}
+
+.pagination a.active:after {
+  box-shadow:inset 0 0 0 5px;
+}
+.pagination {
+    position:fixed;
+    right:20px;
+    top: 50%;
+      transform: translateY(-50%);
+    font-size:1em;
+    z-index: 10;
+    list-style: none;
+  }
+  
+  
+  
+  .glowAnime span{opacity: 0;}
+
+  /*アニメーションで透過を0から1に変化させtext-shadowをつける*/
+  .glowAnime.glow span{ animation:glow_anime_on 1s ease-out forwards; }
+  
+  @keyframes glow_anime_on{
+    0% { opacity:0; text-shadow: 0 0 0 #fff,0 0 0 #fff;}
+    50% { opacity:1;text-shadow: 0 0 10px #fff,0 0 15px #fff; }
+    100% { opacity:1; text-shadow: 0 0 0 #fff,0 0 0 #fff;}
+  }
+
+  
+  p{
+    display:none;
+  }
+  
+  input[type="checkbox"]:checked + p{
+    display:block;
+  }
